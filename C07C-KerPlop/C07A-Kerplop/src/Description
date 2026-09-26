@@ -1,0 +1,37 @@
+-- DESCRIPTION --
+
+1. Boulder
+- Type: Implements Drawable only (Does NOT extend GamePiece).
+- Behavior: Is an obstacle element on the board. 
+Does not interact with the player; does not move.
+
+2. Medusa
+- Extends GamePiece.
+- InteractionResult: KILL
+- Behavior: Stationary piece. Interacts at a distance (kills the player 
+if the player gets within 2 spaces of Medusa).
+
+3. Minotaur
+ - Type: Extends GamePiece
+- InteractionResult: ADVANCE
+ - Behavior: Stationary piece. Interacts at a distance (advances player to the next level if within 1 space).
+
+4. Soldier
+- Type: Extends GamePiece, Implements Moveable
+- InteractionResult: NONE
+- Behavior: Moves in one direction, one tile at a time.
+
+5. Spectre
+- Type: Extends GamePiece, Implements Moveable.
+- InteractionResult: NONE
+- Behavior: Uses random movement to move around the board.
+
+6. Treasure
+- Type: Extends GamePiece
+- InteractionResult: GET_POINT
+- Behavior: Stationary piece. Awards the player a point when landed on square
+
+7. Wasp
+- Type: Extends GamePiece.
+- InteractionResult: HIT
+- Behavior: Hits player if player steps on it.

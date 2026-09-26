@@ -1,3 +1,12 @@
+/*
+ * Class: Treasure
+ * Interaction: GET_POINT
+ * Movement: N/A
+ * Gives player points when found.
+ * 
+ * Authors: Marcus Caro, Trisha Varadaraj
+ * Date: 9/25/2026
+ */
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -10,6 +19,9 @@ public class Treasure extends GamePiece{
 		super('$', "Treasure", loc);
 	}
 	
+	/*
+	 * Give player points when at same location
+	 */
 	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLoc) {
 		

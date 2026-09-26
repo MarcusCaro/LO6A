@@ -1,3 +1,12 @@
+/*
+ * Class: Wasp
+ * Interaction: HIT
+ * Movement: N/A
+ * Hits player when at same location.
+ * 
+ * Authors: Marcus Caro, Trisha Varadaraj
+ * Date: 9/25/2026
+ */
 package levelPieces;
 
 import gameEngine.Drawable;
@@ -9,6 +18,9 @@ public class Wasp extends GamePiece {
 		super('#', "Wasp Nest", loc);
 	}
 	
+	/*
+	 * Wasp hits player when at same location
+	 */
 	@Override
 	public InteractionResult interact(Drawable[] gameBoard, int playerLoc) {
 		
